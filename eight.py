@@ -13,8 +13,8 @@ else:
 
 maxname = None
 maxcount = 0
-for name, count in count.items():
-   if maxname == None or maxcount<count :
+for name, c in count.items():
+   if maxname == None or maxcount<c :
       maxname = name
-      maxcount = count
-print(maxname, maxcount)
+      maxcount = c
+print(maxname, maxcount,count.items())
