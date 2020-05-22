@@ -8,7 +8,7 @@ while True:
     elif inp_alp_bool == 'n':
         inp_alp = '0123456789abcdefghijklmnopqrstuvwxyz'
     else:
-        print('Incorrect response please type y or n')
+        print('Incorrect response please type y, n or done')
         continue
     inp_str = input("Please enter the words that you want to encode or done if you're done encoding: ")
     ls = list()
