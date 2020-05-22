@@ -24,11 +24,11 @@ while True:
                 if m//l == 0:
                     ls[i] = inp_alp[m - 1]
                 elif m//l == 1:
-                    ls[i] = inp_alp[m//l + m%l - 1]
+                    ls[i] = inp_alp[m%l]
                 else:
                     ls[i] = inp_alp[m%l - 1]
             else:
-                if m//l == 0:
+                if m//l == 0 or m%l==0:
                     ls[i] = inp_alp[m - 1]
                 else:
                     ls[i] = inp_alp[m%l -1]
