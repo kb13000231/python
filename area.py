@@ -11,10 +11,16 @@ def area(i):
         b = float(input('Enter breadth:'))
         return l*b
     elif i == 'triangle':
-        a = input('Please enter "y" if the type of triangle is equilateral or "n" for others:')
+        a = input('Please enter "y" if the type of triangle is equilateral or "s" if the sides are known and "n" for others:')
         if a == 'y':
             b = float(input('Please enter the side:'))
             return math.sqrt(3)/4*b*b
+        elif a == 's':
+            b = input('Please enter the sides of the triangle and seperate them using spaces:')
+            c = b.split()
+            x,y,z = float(c[0]),float(c[1]),float(c[2])
+            s = (x+y+z)/2
+            return math.sqrt(s(s-x)(s-y)(s-z))
         else:
             b = float(input('Enter the base of the triangle:'))
             h = float(input('Enter the perpendicular of the triangle:'))
