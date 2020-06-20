@@ -11,7 +11,6 @@ while True:
         inv_dd[z[i]] = inv_dd.get(z[i],0)  + i
     aaa = sorted(inp_no, reverse = True)
     y = int(base_change)
-    print(inv_dd[aaa[0]],type(inv_dd[aaa[0]]),y)
     while True:
         try:
             y>0

@@ -1,17 +1,9 @@
-import sortalgo
-import random
+import math_fxn
+for i in range(100000):
+    x = math_fxn.fibonacci(i)
+    y = math_fxn.factorial(i)
 
-ls = list()
-x = list()
-for i in range(1000):
-    ls.append(i+1)
-
-for i in range(len(ls)):
-    a = random.choice(ls)
-    x.append(a)
-    ls.remove(a)
-
-print(sortalgo.bsort(x))
-
-
-#cd Documents\project\python
+    if x>y:
+        print(i)
+        break
+print('no result')

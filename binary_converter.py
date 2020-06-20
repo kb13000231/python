@@ -13,6 +13,6 @@ while True:
     a = ''
 
     while x>0:
-        a += str(x%y)
+        a = str(x%y) + a
         x = x//y
     print(a)
