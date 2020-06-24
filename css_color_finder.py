@@ -6,7 +6,7 @@ s = ''
 for i in range(n):
     s += input() +'\n'
 a = re.findall('#[a-fA-F0-9]+',s)
-b = re.findall('#[a-fA-F0-9]+\s{',s)
+b = re.findall('#[a-fA-F0-9]+\s*{',s)
 for i in range(len(b)):
     if len(b)<7:
         b[i] = b[i][:4]
