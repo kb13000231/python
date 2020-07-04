@@ -6,7 +6,7 @@ def rand_fib(n):
         a = 1
         b = 1
 
-        for i in range(n):
+        for j in range(n):
             z = random.randint(0,1)
             if z == 0:
                 c = a - b

@@ -21,5 +21,5 @@ def change(amount):
         change(amount)
         return ls
 
-print(change(int(input())))
+change(int(input()))
 print('5 coins:',c_5,'7 coins:',c_7)

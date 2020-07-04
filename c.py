@@ -1,3 +1,4 @@
+# check if two strings are equal
 n = 0
 def check(a,b):
     global n
@@ -14,6 +15,7 @@ def check(a,b):
 x,y = input(),input()
 print(check(x,y))
 
+# power recursive
 b = 1
 def power(a,x):
     global b

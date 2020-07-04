@@ -8,7 +8,7 @@ def xyz(b,d):
     #else:
     #    return 0
 
-print(xyz(1,10))
+print(xyz(1,1))
 #min = None
 #for i in range(1,100):
 #    e = abs(3-xyz(1,i))

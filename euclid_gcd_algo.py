@@ -8,3 +8,7 @@ def gcd(a, b):
       b = b % a
 
   return max(a, b)
+
+while True:
+    a,b = input(),input()
+    print(gcd(int(a),int(b)))

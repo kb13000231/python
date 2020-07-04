@@ -44,7 +44,7 @@ def file_encoder(fname):
                 out += ''
     return out
 
-print('Do you want to use your own alphabet for encoding or the default 0-z.')
+print('Do you want to use your own alphabet for encoding or the default base.')
 while True:
     inp_alp_bool = input('Type "y" to type your own alphabet, "n" to choose the default one and "done" if completed: ')
     if inp_alp_bool == 'y':
@@ -52,7 +52,11 @@ while True:
     elif inp_alp_bool == 'done':
         break
     elif inp_alp_bool == 'n':
-        inp_alp = '0123456789abcdefghijklmnopqrstuvwxyz'
+        inp_alp_alt = input('If you want to use 0-z or the 0-9a-zA-Z,. \ntype 1 for first 2 for second: ')
+        if inp_alp_alt == '1':
+            inp_alp = '0123456789abcdefghijklmnopqrstuvwxyz'
+        else:
+            inp_alp = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.'
     else:
         print('Incorrect response please type y, n or done')
         continue
@@ -60,7 +64,11 @@ while True:
     if inp_str == 'done':
         break
     elif inp_str == 'file':
-        fname = input('Please Enter the name of the file you want to encode:')
-        print(file_encoder(fname))
+        fname = input('Please Enter the name of the file you want to encode: ')
+        oname = input('Input the file name to which you want to output: ')
+        ofile = open(oname,'w')
+        ofile.write(file_encoder(fname))
+        ofile.close()
+
     else:
         print(str_encoder(inp_str))
