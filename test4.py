@@ -1,4 +1,12 @@
-import math_fxn
-y = math_fxn.factorial(31536000)
+import re
 
-print(y)
+a = open('sample-text-file.txt')
+c = open('new.txt')
+
+for line in a:
+    print(type(line.split()))
+
+#b = a.read()
+#e = c.read()
+
+#print(len(b),len(e))
